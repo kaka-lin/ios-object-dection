@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C149B801205277A9001013AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C149B800205277A9001013AE /* AppDelegate.m */; };
+		C149B807205277A9001013AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C149B805205277A9001013AE /* Main.storyboard */; };
+		C149B809205277A9001013AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C149B808205277A9001013AE /* Assets.xcassets */; };
+		C149B80C205277A9001013AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C149B80A205277A9001013AE /* LaunchScreen.storyboard */; };
+		C149B80F205277A9001013AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C149B80E205277A9001013AE /* main.m */; };
+		C149B81920527805001013AE /* tensorflow_utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = C149B81520527805001013AE /* tensorflow_utils.mm */; };
+		C149B81A20527805001013AE /* tf_root.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C149B81620527805001013AE /* tf_root.xcconfig */; };
+		C149B81B20527805001013AE /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C149B81820527805001013AE /* ViewController.mm */; };
+		C149B82120527810001013AE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C149B81D20527810001013AE /* LICENSE */; };
+		C149B82220527810001013AE /* frozen_inference_graph.pb in Resources */ = {isa = PBXBuildFile; fileRef = C149B81E20527810001013AE /* frozen_inference_graph.pb */; };
+		C149B82320527810001013AE /* coco_classes.txt in Resources */ = {isa = PBXBuildFile; fileRef = C149B81F20527810001013AE /* coco_classes.txt */; };
+		C149B82420527810001013AE /* grace_hopper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C149B82020527810001013AE /* grace_hopper.jpg */; };
+		C149B827205279A2001013AE /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C149B826205279A2001013AE /* Accelerate.framework */; };
+		C149B829205279AC001013AE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C149B828205279AC001013AE /* AVFoundation.framework */; };
+		C149B82B205279C1001013AE /* libtensorflow-core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C149B82A205279C1001013AE /* libtensorflow-core.a */; };
+		C1E2F8E420527A06002D3188 /* libprotobuf-lite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E2F8E220527A06002D3188 /* libprotobuf-lite.a */; };
+		C1E2F8E520527A06002D3188 /* libprotobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E2F8E320527A06002D3188 /* libprotobuf.a */; };
+		C1E2F8E720527A33002D3188 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E2F8E620527A33002D3188 /* CoreMedia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C149B7FC205277A9001013AE /* ios-object-dection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-object-dection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C149B7FF205277A9001013AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C149B800205277A9001013AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C149B802205277A9001013AE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C149B806205277A9001013AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C149B808205277A9001013AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C149B80B205277A9001013AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C149B80D205277A9001013AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C149B80E205277A9001013AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C149B81520527805001013AE /* tensorflow_utils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = tensorflow_utils.mm; sourceTree = "<group>"; };
+		C149B81620527805001013AE /* tf_root.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = tf_root.xcconfig; sourceTree = "<group>"; };
+		C149B81720527805001013AE /* tensorflow_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tensorflow_utils.h; sourceTree = "<group>"; };
+		C149B81820527805001013AE /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		C149B81D20527810001013AE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C149B81E20527810001013AE /* frozen_inference_graph.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = frozen_inference_graph.pb; sourceTree = "<group>"; };
+		C149B81F20527810001013AE /* coco_classes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = coco_classes.txt; sourceTree = "<group>"; };
+		C149B82020527810001013AE /* grace_hopper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grace_hopper.jpg; sourceTree = "<group>"; };
+		C149B826205279A2001013AE /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		C149B828205279AC001013AE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C149B82A205279C1001013AE /* libtensorflow-core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libtensorflow-core.a"; path = "../../DL-Framework/tensorflow/tensorflow/contrib/makefile/gen/lib/libtensorflow-core.a"; sourceTree = "<group>"; };
+		C1E2F8E220527A06002D3188 /* libprotobuf-lite.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libprotobuf-lite.a"; path = "../../DL-Framework/tensorflow/tensorflow/contrib/makefile/gen/protobuf_ios/lib/libprotobuf-lite.a"; sourceTree = "<group>"; };
+		C1E2F8E320527A06002D3188 /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprotobuf.a; path = "../../DL-Framework/tensorflow/tensorflow/contrib/makefile/gen/protobuf_ios/lib/libprotobuf.a"; sourceTree = "<group>"; };
+		C1E2F8E620527A33002D3188 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C149B7F9205277A9001013AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E2F8E720527A33002D3188 /* CoreMedia.framework in Frameworks */,
+				C1E2F8E420527A06002D3188 /* libprotobuf-lite.a in Frameworks */,
+				C1E2F8E520527A06002D3188 /* libprotobuf.a in Frameworks */,
+				C149B82B205279C1001013AE /* libtensorflow-core.a in Frameworks */,
+				C149B829205279AC001013AE /* AVFoundation.framework in Frameworks */,
+				C149B827205279A2001013AE /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C149B7F3205277A9001013AE = {
+			isa = PBXGroup;
+			children = (
+				C149B81C20527810001013AE /* data */,
+				C149B7FE205277A9001013AE /* ios-object-dection */,
+				C149B7FD205277A9001013AE /* Products */,
+				C149B825205279A2001013AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C149B7FD205277A9001013AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C149B7FC205277A9001013AE /* ios-object-dection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C149B7FE205277A9001013AE /* ios-object-dection */ = {
+			isa = PBXGroup;
+			children = (
+				C149B81720527805001013AE /* tensorflow_utils.h */,
+				C149B81520527805001013AE /* tensorflow_utils.mm */,
+				C149B81620527805001013AE /* tf_root.xcconfig */,
+				C149B7FF205277A9001013AE /* AppDelegate.h */,
+				C149B800205277A9001013AE /* AppDelegate.m */,
+				C149B802205277A9001013AE /* ViewController.h */,
+				C149B81820527805001013AE /* ViewController.mm */,
+				C149B805205277A9001013AE /* Main.storyboard */,
+				C149B808205277A9001013AE /* Assets.xcassets */,
+				C149B80A205277A9001013AE /* LaunchScreen.storyboard */,
+				C149B80D205277A9001013AE /* Info.plist */,
+				C149B80E205277A9001013AE /* main.m */,
+			);
+			path = "ios-object-dection";
+			sourceTree = "<group>";
+		};
+		C149B81C20527810001013AE /* data */ = {
+			isa = PBXGroup;
+			children = (
+				C149B81D20527810001013AE /* LICENSE */,
+				C149B81E20527810001013AE /* frozen_inference_graph.pb */,
+				C149B81F20527810001013AE /* coco_classes.txt */,
+				C149B82020527810001013AE /* grace_hopper.jpg */,
+			);
+			name = data;
+			path = "ios-object-dection/data";
+			sourceTree = "<group>";
+		};
+		C149B825205279A2001013AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1E2F8E620527A33002D3188 /* CoreMedia.framework */,
+				C1E2F8E220527A06002D3188 /* libprotobuf-lite.a */,
+				C1E2F8E320527A06002D3188 /* libprotobuf.a */,
+				C149B82A205279C1001013AE /* libtensorflow-core.a */,
+				C149B828205279AC001013AE /* AVFoundation.framework */,
+				C149B826205279A2001013AE /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C149B7FB205277A9001013AE /* ios-object-dection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C149B812205277A9001013AE /* Build configuration list for PBXNativeTarget "ios-object-dection" */;
+			buildPhases = (
+				C149B7F8205277A9001013AE /* Sources */,
+				C149B7F9205277A9001013AE /* Frameworks */,
+				C149B7FA205277A9001013AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-object-dection";
+			productName = "ios-object-dection";
+			productReference = C149B7FC205277A9001013AE /* ios-object-dection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C149B7F4205277A9001013AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "kaka lin";
+				TargetAttributes = {
+					C149B7FB205277A9001013AE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C149B7F7205277A9001013AE /* Build configuration list for PBXProject "ios-object-dection" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C149B7F3205277A9001013AE;
+			productRefGroup = C149B7FD205277A9001013AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C149B7FB205277A9001013AE /* ios-object-dection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C149B7FA205277A9001013AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C149B81A20527805001013AE /* tf_root.xcconfig in Resources */,
+				C149B80C205277A9001013AE /* LaunchScreen.storyboard in Resources */,
+				C149B809205277A9001013AE /* Assets.xcassets in Resources */,
+				C149B82320527810001013AE /* coco_classes.txt in Resources */,
+				C149B807205277A9001013AE /* Main.storyboard in Resources */,
+				C149B82220527810001013AE /* frozen_inference_graph.pb in Resources */,
+				C149B82420527810001013AE /* grace_hopper.jpg in Resources */,
+				C149B82120527810001013AE /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C149B7F8205277A9001013AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C149B81B20527805001013AE /* ViewController.mm in Sources */,
+				C149B81920527805001013AE /* tensorflow_utils.mm in Sources */,
+				C149B80F205277A9001013AE /* main.m in Sources */,
+				C149B801205277A9001013AE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C149B805205277A9001013AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C149B806205277A9001013AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C149B80A205277A9001013AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C149B80B205277A9001013AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C149B810205277A9001013AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C149B81620527805001013AE /* tf_root.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C149B811205277A9001013AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C149B81620527805001013AE /* tf_root.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C149B813205277A9001013AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C149B81620527805001013AE /* tf_root.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PSULNR6N33;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(TF_ROOT)",
+					"$(TF_ROOT)/tensorflow/contrib/makefile/downloads/protobuf/src",
+					"$(TF_ROOT)/tensorflow/contrib/makefile/downloads/eigen",
+					"$(TF_ROOT)/tensorflow/contrib/makefile/downloads",
+					"$(TF_ROOT)/tensorflow/contrib/makefile/gen/proto",
+					"$(TF_ROOT)/tensorflow/contrib/makefile/downloads/nsync/public/",
+				);
+				INFOPLIST_FILE = "ios-object-dection/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TF_ROOT)/tensorflow/contrib/makefile/gen/lib",
+					"$(TF_ROOT)/tensorflow/contrib/makefile/gen/protobuf_ios/lib",
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(TF_ROOT)/tensorflow/contrib/makefile/gen/lib/libtensorflow-core.a",
+					"$(TF_ROOT)/tensorflow/contrib/makefile/downloads/nsync/builds/lipo.ios.c++11/nsync.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kaka.ios-object-dection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C149B814205277A9001013AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C149B81620527805001013AE /* tf_root.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PSULNR6N33;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(TF_ROOT)",
+					"$(TF_ROOT)/tensorflow/contrib/makefile/downloads/protobuf/src",
+					"$(TF_ROOT)/tensorflow/contrib/makefile/downloads/eigen",
+					"$(TF_ROOT)/tensorflow/contrib/makefile/downloads",
+					"$(TF_ROOT)/tensorflow/contrib/makefile/gen/proto",
+					"$(TF_ROOT)/tensorflow/contrib/makefile/downloads/nsync/public/",
+				);
+				INFOPLIST_FILE = "ios-object-dection/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TF_ROOT)/tensorflow/contrib/makefile/gen/lib",
+					"$(TF_ROOT)/tensorflow/contrib/makefile/gen/protobuf_ios/lib",
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(TF_ROOT)/tensorflow/contrib/makefile/gen/lib/libtensorflow-core.a",
+					"$(TF_ROOT)/tensorflow/contrib/makefile/downloads/nsync/builds/lipo.ios.c++11/nsync.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kaka.ios-object-dection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C149B7F7205277A9001013AE /* Build configuration list for PBXProject "ios-object-dection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C149B810205277A9001013AE /* Debug */,
+				C149B811205277A9001013AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C149B812205277A9001013AE /* Build configuration list for PBXNativeTarget "ios-object-dection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C149B813205277A9001013AE /* Debug */,
+				C149B814205277A9001013AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C149B7F4205277A9001013AE /* Project object */;
+}
